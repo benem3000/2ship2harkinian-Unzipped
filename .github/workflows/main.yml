@@ -204,12 +204,12 @@ jobs:
       env:
         CC: gcc-12
         CXX: g++-12
-    - name: Upload AppImage
+    - name: Upload Standalone AppImage
       uses: actions/upload-artifact@v7
       with:
         path: 2ship.appimage
         archive: false
-    - name: Upload Readme
+    - name: Upload Standalone Readme
       uses: actions/upload-artifact@v7
       with:
         path: readme.txt
